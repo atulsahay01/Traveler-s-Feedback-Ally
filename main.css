@@ -1,0 +1,184 @@
+/* General style rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header style rules */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Main style rules */
+main {
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 20px;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* add border to div */
+    border: 1px solid #ccc;
+    /* add padding to div */
+    padding: 10px;
+}
+
+.hotel-item {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.hotel-item h2 {
+    text-align: center;
+}
+
+.hotel-item img {
+    width: 100%;
+}
+
+.hotel-item p {
+    text-align: center;
+}
+
+/* Modal style rules */
+.modal {
+    display: none; /* Hidden by default */
+    border: 1px solid #ccc;
+    align-items: center;
+}
+
+.modal-reviews {
+    height: 70%;
+    overflow-y: scroll; /* Add scrollbar */
+}
+
+.modal-tabs {
+    height: 30%;
+}
+
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Tab style rules */
+.tab {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.tab.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Review style rules */
+.review {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.review h3 {
+    font-size: 18px;
+}
+
+.review p {
+    font-size: 14px;
+}
+
+/* You can change the style of the component here */
+/* .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  } */
+  
+  .reviews {
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .scrollable {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .review {
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: gold;
+  }
+  
+  .summary {
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+  }
+  
+  .progress {
+    height: 20px;
+  }
+  
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+
+/* Footer style rules */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .hotel-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hotel-item {
+        width: 100%;
+    }
+}
+

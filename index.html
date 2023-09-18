@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Traveller's Feedback Ally</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hotel-list">     
+                <button class="hotel-item" id="button1">
+                    <h2>Mountain Retreat Inn</h2>
+                    <p>Rating: 4.7/5</p>
+                </button> 
+                <button class="hotel-item" id="button2">
+                    <h2>Hotel Luxe</h2>
+                    <p>Rating: 4.2/5</p>
+                </button>
+                <button class="hotel-item" id="button3">
+                    <h2>Golden Palace</h2>
+                    <p>Rating: 4.8/5</p>
+                </button>
+                <button class="hotel-item" id="button4">
+                    <h2>Grand Plaza Hotel</h2>
+                    <p>Rating: 4.2/5</p>
+                </button>
+                <button class="hotel-item" id="button5">
+                    <h2>Ocean View Resort</h2>
+                    <p>Rating: 4.4/5</p>
+                </button>               
+            </div>
+
+            <!-- Modal component -->
+            
+
+            <div class="modal" id="modal1">
+                <div class="reviews">
+                  <h2>Customer Reviews:</h2>
+                  <div class="scrollable">
+                    <div class="review">
+                      <p><strong>John Doe</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                      <p>I had a pleasant stay at this hotel. The staff was friendly and helpful, the room was clean and comfortable, and the location was convenient. The breakfast was also good, with a variety of options. The only downside was the noise from the street, which was a bit annoying at night.</p>
+                    </div>
+                    <div class="review">
+                      <p><strong>Jane Smith</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                      <p>This hotel was decent, but not great. The room was spacious, but the furniture was old and worn out. The bathroom was also small and had some mold on the tiles. The wifi was slow and unreliable, and the TV had only a few channels. The staff was polite, but not very attentive. The breakfast was mediocre, with limited choices.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary">
+                  <h2>Review Summary:</h2>
+                  <div class="progress-bar">
+                   <div class="progress" style="width: 75%; background-color: green;"></div>
+                    <p>Satisfaction: 75%</p>
+                  </div>                  
+                  <p>Generated Summary: </strong>It is a clean hotel</p>
+                  <div class="keywords">
+                    <button>Clean</button>
+                    <button>Comfortable</button>
+                    <button>Friendly</button>
+                    <button>Noisy</button>
+                    <button>Old</button>
+                  </div>
+                </div>
+            </div>     
+
+            <div class="modal" id="modal2">
+                <div class="reviews">
+                  <h2>Customer Reviews:</h2>
+                  <div class="scrollable">
+                    <div class="review">
+                        <p><strong>John Doe</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>I had a pleasant stay at this hotel. The staff was friendly and helpful, the room was clean and comfortable, and the location was convenient. The breakfast was also good, with a variety of options. The only downside was the noise from the street, which was a bit annoying at night.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Jane Smith</strong> rated this hotel <span class="rating">★★★★★</span></p>
+                        <p>This hotel exceeded my expectations. The room was spacious and well-maintained. The staff went out of their way to make my stay enjoyable. The location was perfect for exploring the city, and I didn't experience any noise issues. I highly recommend Hotel Luxe!</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>David Johnson</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>The hotel was decent, but not exceptional. The room was clean, but I expected a bit more luxury for the price. The staff was friendly, and the location was convenient. However, the noise from nearby construction was bothersome during my stay.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Susan Wilson</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>I enjoyed my stay at Hotel Luxe. The room was cozy and clean. The breakfast was delicious, and the hotel's restaurant had great food. The only minor issue was slow Wi-Fi in my room, but overall, it was a pleasant experience.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Michael Brown</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>The hotel staff was exceptional, always ready to assist with a smile. The room was comfortable, and the location was convenient for both business and leisure travelers. Noise was not an issue, and I would stay here again on my next trip.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Linda Garcia</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>I had a great time at Hotel Luxe. The room was clean and well-appointed. The hotel's amenities, including the gym and pool, were a nice bonus. The location was central, making it easy to explore the city. I only wish the room had a better view.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Robert Lee</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>The hotel was decent, but there were some maintenance issues in my room. The staff was friendly, and the breakfast was satisfactory. Noise from neighboring rooms was a problem, and I had difficulty sleeping peacefully.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Mary Taylor</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>I had a pleasant stay at Hotel Luxe. The room was clean and comfortable, and the staff was attentive. The hotel's location was ideal for sightseeing, and I appreciated the complimentary shuttle service. Noise from the street was minimal.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>James Clark</strong> rated this hotel <span class="rating">★★★★★</span></p>
+                        <p>This hotel was outstanding in every aspect. The room was luxurious, the staff was top-notch, and the location couldn't be better. I had no complaints during my stay, and I would definitely return to Hotel Luxe in the future.</p>
+                    </div>
+                    
+                    <div class="review">
+                        <p><strong>Emily Davis</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>The hotel was average, with no major issues but also no standout features. The room was clean, and the staff was friendly. The hotel's location was convenient for my business trip, but I expected a bit more for the price.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="summary">
+                    <div id="summary2">
+                  <h2>Review Summary:</h2>
+                  <div class="progress-bar"> 
+                    <div class="progress" style="width: 84%; background-color: green;"></div>
+                    <p> Satisfaction: 84%</p>
+                  </div>
+                </div>
+                  <div class="keywords">
+                    <button id="button21">Staff</button>
+                    <button id="button22">Room</button>
+                    <button id="button23">Location</button>
+                    <button id="button24">Breakfast</button>
+                    <button id="button25">Noise</button>
+                  </div>
+                </div>
+            </div> 
+            
+            <div class="modal" id="modal4">
+                <div class="reviews">
+                  <h2>Customer Reviews:</h2>
+                  <div class="scrollable">  
+
+                      <div class="review">
+                        <p><strong>Michael Johnson</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>The hotel was decent, but there were a few issues. The room could have been cleaner, and the Wi-Fi was a bit spotty. However, the staff was friendly and the amenities were satisfactory.</p>
+                      </div>
+                      
+                      <div class="review">
+                        <p><strong>Susan Davis</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>Average stay. The room was comfortable, but the noise from neighboring rooms was a bit bothersome. The breakfast options were limited, but satisfactory. Staff was polite.</p>
+                      </div>
+                      
+                      <div class="review">
+                        <p><strong>David Brown</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>Overall, a good experience. The room was clean and the bed was comfortable. The hotel's location was convenient for my needs. Staff was courteous and accommodating.</p>
+                      </div>
+                      
+                      <div class="review">
+                        <p><strong>Linda Wilson</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>Great value for money. The room was clean and spacious. The breakfast had a good variety of options. The staff was friendly and helpful.</p>
+                      </div>
+                      
+                      <div class="review">
+                        <p><strong>Robert Taylor</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>Decent hotel. The room was comfortable, but the noise from the hallway was a bit disruptive. The breakfast was basic. Staff was polite.</p>
+                      </div>   
+
+                      <div class="review">
+                        <p><strong>John Doe</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>I had a pleasant stay at this hotel. The staff was friendly and helpful, the room was clean and comfortable, and the location was convenient. The breakfast was also good, with a variety of options. The only downside was the noise from the street, which was a bit annoying at night.</p>
+                      </div>
+
+                      <div class="review">
+                        <p><strong>Mary Robinson</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>Enjoyable stay. The room was clean and the amenities were good. The staff was attentive. The location was convenient for my business meetings.</p>
+                      </div>
+                                          
+                      <div class="review">
+                        <p><strong>Jane Smith</strong> rated this hotel <span class="rating">★★★★★</span></p>
+                        <p>Exceptional experience! The hotel staff went above and beyond to make my stay comfortable. The room was luxurious and well-appointed. The location was perfect for exploring the city. I would definitely stay here again.</p>
+                      </div>
+
+                      <div class="review">
+                        <p><strong>James Miller</strong> rated this hotel <span class="rating">★★★★☆</span></p>
+                        <p>Overall, a positive experience. The room was well-maintained and comfortable. The staff was helpful. The location was convenient for exploring the city.</p>
+                      </div>
+                      
+                      <div class="review">
+                        <p><strong>Karen Turner</strong> rated this hotel <span class="rating">★★★☆☆</span></p>
+                        <p>Decent stay. The room was clean, but the decor felt a bit dated. The staff was friendly. The location was okay, not too far from attractions.</p>
+                      </div>
+                  </div>
+                
+                </div>
+                <div class="summary">
+                    <div id="summary4">
+                  <h2>Review Summary:</h2>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 84%; background-color: green;"></div>
+                    <p> Satisfaction: 84%</p>
+                  </div>
+                </div>
+                  <div class="keywords">
+                    <button id="button41">Room</button>
+                    <button id="button42">Staff</button>
+                    <button id="button43">Location</button>
+                    <button id="button44">Breakfast</button>
+                    <button id="button45">Value</button>
+                  </div4
+                </div>
+            </div> 
+          
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Traveller's Feedback Ally app.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
+
