@@ -40,25 +40,6 @@ var button45 = document.getElementById("button45");
 var summary2 = document.getElementById("summary2");
 var summary4 = document.getElementById("summary4");
 
-// Change the summary2 div when a button is clicked
-{/* <div class="summary" id="summary2" >
-                  <h2>Review Summary:</h2>
-                  <div class="progress-bar">
-                    <div class="progress" style="width: 75%; background-color: green;"></div>
-                    <p>Satisfaction: 75%</p>
-                  </div>                  
-                  <p>Generated Summary: </strong>It is a clean hotel</p>
-                  <div class="keywords">
-                    <button id="button21">Staff</button>
-                    <button id="button22">Room</button>
-                    <button id="button23">Location</button>
-                    <button id="button24">Breakfast</button>
-                    <button id="button25">Noise</button>
-                  </div>
-                </div> */}
-// write code
-
-
 // Certainly! Here's a combined version of the reviews with the extracted keywords and summaries:
 
 // Hotel Luxe Reviews:
@@ -138,40 +119,3 @@ button44.onclick = function() {
 button45.onclick = function() {
     summary4.innerHTML = "<h2>Review Summary:</h2><div class='progress-bar'><div class='progress' style='width: 80%; background-color: green;'></div><p>Satisfaction:80%</p></div><p>Generated Summary: </strong>A few reviewers mentioned the value for money, indicating that they felt they received good service for the price they paid.</p>";
 }
-
-// var reviews = 
-// {
-//     "hotel2": [
-//         {
-//             name: "Alice Lee",
-//             rating: "★★★★★",
-//             comment: "This hotel was amazing! The room was cozy and elegant, the bathroom was spacious and clean, and the wifi was fast and stable. The staff was very friendly and helpful, and the breakfast was delicious and varied. I would definitely stay here again!"
-//         },
-//         {
-//             name: "Bob Chen",
-//             rating: "★★☆☆☆",
-//             comment: "This hotel was disappointing. The room was small and dirty, the bathroom was leaking and smelly, and the wifi was nonexistent. The staff was rude and unprofessional, and the breakfast was bland and scarce. I would not recommend this hotel to anyone!"
-//         },
-//         // More reviews here
-//     ]
-// }
-
-// function changeReviews() {
-//   // Select the div element with the class of "scrollable"
-//   var scrollableDiv = document.(".scrollable");
-//   // Clear the existing reviews
-//   scrollableDiv.innerHTML = "";
-//   // Loop through the array of reviews
-//   for (var i = 0; i < reviews.length; i++) {
-//     // Get a random index for the array
-//     var randomIndex = getRandomIndex(reviews);
-//     // Get the review at that index
-//     var review = reviews[randomIndex];
-//     // Create a new HTML string for the review
-//     var reviewHTML = "<div class='review'><p><strong>" + review.name + "</strong> rated this hotel <span class='rating'>" + review.rating + "</span></p><p>" + review.comment + "</p></div>";
-//     // Append the HTML string to the scrollable div element
-//     scrollableDiv.innerHTML += reviewHTML;
-//     // Remove the review from the array to avoid duplicates
-//     reviews.splice(randomIndex, 1);
-//   }
-// }
